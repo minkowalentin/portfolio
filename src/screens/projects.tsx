@@ -1,8 +1,13 @@
 import React from 'react'
+import Header from '../components/UI/header/header'
 
 class ProjectsScreen extends React.Component {
 	render() {
-		return <div className="projectscreen-container">Project meh</div>
+		return (
+			<div className="aboutscreen-container">
+				<Header content="projects" />
+			</div>
+		)
 	}
 }
 

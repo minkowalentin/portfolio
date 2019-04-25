@@ -12,7 +12,9 @@ class App extends Component {
 				<div className="app-body">
 					<header className="App-header">
 						<Layout />
-						<RouterComponent />
+						<div className="content-container">
+							<RouterComponent />
+						</div>
 					</header>
 				</div>
 			</Router>

@@ -1,0 +1,25 @@
+
+.header-container {
+	width: 90%;
+	margin: 0 auto; 	 
+	color: #535353;
+}
+.header {
+	margin: 0px;
+	left: 5%;
+	top:70px;
+	position:absolute;
+	animation-name: goLeft;
+	animation-iteration-count: 1;
+	animation-duration: 1.5s;
+}
+
+.header-decoration {
+	height:1px;
+	border-bottom: solid 1px #b7b7b7;
+}
+
+@keyframes goLeft {
+	0% { left: 50%;}
+	100%{ left: 5%;}
+}
