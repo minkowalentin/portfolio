@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import './App.scss';
+import './App.scss'
 
-import Layout from './components/layout/layout';
-import RouterComponent from './screens/router';
+import Layout from './components/layout/layout'
+import RouterComponent from './screens/router'
 
 class App extends Component {
 	render() {
@@ -16,8 +16,8 @@ class App extends Component {
 					</header>
 				</div>
 			</Router>
-		);
+		)
 	}
 }
 
-export default App;
+export default App

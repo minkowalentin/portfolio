@@ -1,12 +1,10 @@
 import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
-import AboutScreen from '../screens/about';
-import ContactScreen from '../screens/contact';
-import ProjectsScreen from '../screens/projects';
-
+import AboutScreen from '../screens/about'
+import ContactScreen from '../screens/contact'
+import ProjectsScreen from '../screens/projects'
 
 class RouterComponent extends React.Component {
-
 	render() {
 		return (
 			<div>
@@ -18,7 +16,6 @@ class RouterComponent extends React.Component {
 			</div>
 		)
 	}
-
 }
 
 export default RouterComponent
