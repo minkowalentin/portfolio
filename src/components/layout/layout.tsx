@@ -9,7 +9,7 @@ import compose from 'recompose/compose'
 const styles = {
 	root: {
 		height: 40,
-		background: '#7b7b7b',
+		background: '#363636',
 		color: 'white',
 	},
 }

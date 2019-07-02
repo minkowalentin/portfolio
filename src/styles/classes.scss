@@ -1,0 +1,25 @@
+@import '../styles/variables.scss';
+
+.main-container {
+	margin-top: 30px;
+	overflow:auto;
+	padding: 10px;
+}
+
+.content-container {
+    margin: 0 auto;
+    width:90%;
+    margin-top:50px;
+}
+
+.main-header {
+    padding: 10px;
+}
+
+.header-comment{
+    font-size:15px;
+    color: gray;
+}
+.header-cursor{
+    float: left;
+}

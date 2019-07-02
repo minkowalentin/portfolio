@@ -1,0 +1,72 @@
+@import'../../../styles/variables.scss';
+
+.my-picture-container{
+    .my-picture {
+        width:80%;
+        float:right;
+    }
+}
+
+.about-me-text{
+    flex-grow: 1;
+    font-size: 1em;
+}
+
+.about-me-info-container {
+    display: flex;
+    flex-direction: column;
+    padding:0px 10px;
+    
+}
+
+.about-main-container {
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding:20px;
+}
+
+.about-me-icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-me-icon {
+    cursor: pointer;
+    height:32px;
+    width:32px;
+    margin: 0px 10px 0px 0px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #E5E5E5;
+   
+}
+
+.about-me-icon:hover {
+    border-bottom:solid 1px;
+}
+
+@media (max-width: 600px) {
+
+    .about-main-container {
+        flex-direction: column;
+    }
+
+    .my-picture-container{
+        .my-picture {
+            width:100%;
+        }
+    }
+
+    .about-me-icons{
+        justify-content: center;
+    }
+
+    .about-me-icon {
+        margin: 0px 10px 10px 0px;
+    }
+    
+  }
