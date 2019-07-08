@@ -1,8 +1,3 @@
-.skills-container {
-    overflow: hidden;
-    display:flex;
-    flex-direction: row;
-}
 
 .skills-header {
     font-weight: bold;
@@ -11,25 +6,57 @@
 
 .skill-section {
     width:50%;
-    border: solid 1px;
+    border: solid 1px #dadada;
 }
 
-.skill-section.frontend{
+.skill-section{
     margin: 10px 10px 0px 0px;
-
 }
 
 .skill-section.backend{
-    margin: 10px 0px 0px 10px;
+    margin: 10px 0px 0px 0px;
 }
 
 .skill {
     list-style-type: none;
-    text-align: center;
-    margin:10px 0;
+    margin:0px 0px 10px 5px;
     cursor: pointer;
 }
 
 .skill:hover{
     color: gray;
+}
+
+.skill-container{
+    width:25%;
+    margin-right:10px;
+    border-right :solid 1px gray;
+}
+
+.skill-content{
+    display:flex;
+    margin:5px;
+}
+
+.selected-skill-container{
+    margin-left:10px;
+    p{
+        margin:0px;
+    }
+    align-self: flex-start;
+}
+
+.selected-skill-logo{
+    width: 24%;
+}
+
+.skill-progress-bar{
+    height:60px;
+    width:60px;
+}
+
+@media (max-width:800px){
+    .skill-section{ 
+        width: 100%;
+    }
 }

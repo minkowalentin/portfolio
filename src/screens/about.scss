@@ -1,0 +1,15 @@
+.skills-container {
+    display:flex;
+    flex-direction: row;
+}
+
+@media (max-width: 860px) {
+    .aboutscreen-container{
+        font-size:12px;
+    }
+}
+@media (max-width:800px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}
