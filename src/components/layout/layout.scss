@@ -12,13 +12,11 @@
 	margin-right:15px;
 	cursor:pointer;
 	text-decoration: 'none';
-	font-size: 18px;
+	font-size:20px;
 }
 
 .layout-btns:hover {
-	font-size: 15px;
-	color: #3b3b3b;
-	background-color: #fff;
+	font-size: 22px;
 	padding:5px;
 	transition: background-color 500ms ease-in-out, padding 500ms ease-in-out, color 500ms ease-in-out, font 200ms ease-in-out;
 }

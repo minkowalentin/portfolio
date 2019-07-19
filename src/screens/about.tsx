@@ -8,9 +8,39 @@ import Skill from '../interfaces/skill'
 import Typist from 'react-typist';
 import './about.scss'
 
-class AboutScreen extends React.Component {
-	
+interface IState {
+	rotate: boolean;
+	interval: number;
+	rotateInterval: number;
+  }
+
+class AboutScreen extends React.Component<IState,any> {
+	constructor(props: any) {
+		super(props)
+		this.state = {
+			rotate:false,
+			interval: 0,
+			rotateInterval: 2200
+		}
+	  }
+
+	  componentDidMount() {
+		  const {rotateInterval} = this.state
+		  this.setState({
+			  interval: setInterval(() => this.rotateSkills(), rotateInterval)
+		  })
+	  }
+
+	  componentWillUnmount() {
+		clearInterval(this.state.interval);
+	  }
+
+	  rotateSkills = () => {
+		this.setState({rotate:true})
+	  }
+
 	render() {
+		const {rotate} = this.state;
 		const frontendSkills: Skill = skills[0]
 		const backendSkills: Skill = skills[1]
 
@@ -30,8 +60,8 @@ class AboutScreen extends React.Component {
 				</Typist>
 				<IntroductionText/>
 				<div className="skills-container" >
-					<SkillsArea skill={frontendSkills}/>
-					<SkillsArea skill={backendSkills}/>
+					<SkillsArea skill={frontendSkills} rotate={rotate} />
+					<SkillsArea skill={backendSkills} rotate={rotate}/>
 				</div>
 
 				</div>

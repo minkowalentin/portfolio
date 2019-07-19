@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import './App.scss'
-
+import './styles/fonts.scss'
 import Layout from './components/layout/layout'
 import RouterComponent from './screens/router'
 
